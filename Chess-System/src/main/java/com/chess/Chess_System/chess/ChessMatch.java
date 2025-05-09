@@ -3,10 +3,7 @@ package com.chess.Chess_System.chess;
 import com.chess.Chess_System.boardgame.Board;
 import com.chess.Chess_System.boardgame.Piece;
 import com.chess.Chess_System.boardgame.Position;
-import com.chess.Chess_System.chess.pieces.Bishop;
-import com.chess.Chess_System.chess.pieces.King;
-import com.chess.Chess_System.chess.pieces.Pawn;
-import com.chess.Chess_System.chess.pieces.Rook;
+import com.chess.Chess_System.chess.pieces.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -204,6 +201,8 @@ public class ChessMatch {
         placeNewPiece('h', 2, new Pawn(board, Color.WHITE));
         placeNewPiece('c', 1, new Bishop(board, Color.WHITE));
         placeNewPiece('f', 1, new Bishop(board, Color.WHITE));
+        placeNewPiece('b', 1, new Knight(board, Color.WHITE));
+        placeNewPiece('g', 1, new Knight(board, Color.WHITE));
 
         placeNewPiece('a', 8, new Rook(board, Color.BLACK));
         placeNewPiece('e', 8, new King(board, Color.BLACK));
@@ -218,6 +217,8 @@ public class ChessMatch {
         placeNewPiece('h', 7, new Pawn(board, Color.BLACK));
         placeNewPiece('c', 8, new Bishop(board, Color.BLACK));
         placeNewPiece('f', 8, new Bishop(board, Color.BLACK));
+        placeNewPiece('b', 8, new Knight(board, Color.BLACK));
+        placeNewPiece('g', 8, new Knight(board, Color.BLACK));
 
     }
 }
